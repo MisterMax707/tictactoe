@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>tictactoe</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="main" class="main">
+        <div class="canvas_container" ">
+            <canvas id="canvas" width="340" height="340"></canvas>
+        </div>
+
+        <div style="display:none">
+            <img id="circle_img" src="circle.png" />
+            <img id="cross_img" src="cross.png" />
+
+        </div>
+        <div class="score_container">
+            <div>Счёт</div>
+            <div class="players">
+                <div>PlayerName1</div>
+                <div></div>
+                <div>PlayerName2</div>
+                <div> <img src="cross.png" class="image_for_score" /></div>
+                <div></div>
+                <div> <img src="circle.png" class="image_for_score" /></div>
+                <div id="firstPlayerWins" class="countofwin">0</div>
+                <div class="dvoetochie">:</div>
+                <div id="secondPlayerWins" class="countofwin">0</div>
+
+            </div>
+
+
+
+        </div>
+
+        <p id="messagePanel"></p>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+
+                <div class="popup_title">
+                    #Крестики_Нолики
+                </div>
+                <div class="popup_text">
+
+                    Имя первого игрока:<br>
+                    <input type="text" id="firstPlayerName" placeholder="Введите имя" /><br />
+
+
+                    Имя второго игрока:<br>
+                    <input type="text" id="secondPlayerName" placeholder="Введите имя" />
+
+                    <div class="btnstart">
+
+                        <button id="btnStart">Старт</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popupWinner" class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+
+                <div class="popup_title" id="messageWinner">
+
+                </div>
+                <div class="buttoncontainer">
+                    
+                        <img src="strong_dog.png" width="400" height="250" class="dogimage" />
+                  
+                   <div class="againcontinue">
+
+                    <button id="btnAgain">Заново</button>
+                    <button id="btnContinue">Продолжить</button>
+
+                   </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="circle.js"></script>
+    <script src="cross.js"></script>
+    <script src="game.js"></script>
+
+
+
+</body>
+
+</html>
